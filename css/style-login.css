@@ -1,0 +1,339 @@
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+
+/* Set maximum height for the brand image in the navbar */
+.navbar-brand img {
+    max-height: 50px;
+}
+
+/* Styles for the navigation button */
+.navbar-btn {
+    background-color: red;
+    border: none;
+    margin-right: 10px; 
+}
+
+/* Default styles for the theme toggle button */
+.theme-toggle {
+    background-color: #f8f9fa;
+    border: none;
+    cursor: pointer;
+    padding: 1px 3px; 
+}
+
+/* Styles for elements in dark mode */
+.dark-mode {
+    background-color: #000000; 
+    color: #ffffff; 
+}
+.dark-mode .navbar {
+    background-color: #000000; 
+}
+.dark-mode .nav-link {
+    color: #ffffff; 
+    font-weight: bold;
+}
+.dark-mode .theme-toggle {
+    background-color: #f8f9fa; 
+    color: #000000; 
+}
+
+/* Styles for elements in light mode */
+.light-mode {
+    background-color: #f8f9fa;
+    color: #000000;
+}
+.light-mode .navbar {
+    background-color: #f8f9fa;
+}
+.light-mode .nav-link {
+    color: #000000; 
+    font-weight: bold;
+}
+.light-mode .theme-toggle {
+    background-color: #000000; 
+    color: #ffffff; 
+}
+
+/* Styles for the hero photo container */
+.HeroPhoto {
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;  
+}
+
+/* Positioning of the hero photo */
+.HeroPhoto {
+    position: relative;  
+}
+
+/* Transition effect for the hero image */
+.HeroPhoto img {
+    transition: opacity 1s; 
+}
+
+/* Styles for the text inside the hero photo */
+.hero-text {
+    position: absolute;
+    right: 8%; 
+    top: 30%; 
+    color: #fff;
+    z-index: 2; 
+}
+
+/* Styles for h1 inside the hero text */
+.hero-text h1 {
+    position: relative;
+    font-size: 66px;
+    margin-bottom: 10px;
+    font-style: oblique;
+    font-weight: bold;
+    margin-left: 0px;
+}
+
+/* Styles for a red gradient button */
+.btn-red {
+    position: relative;
+    background: linear-gradient(to bottom, #ff3019 0%,#cf0404 100%);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    margin-top: 20px;  
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: larger;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    left: 40%; 
+}
+
+/* Hover effect for the red gradient button */
+.btn-red:hover {
+    background: linear-gradient(to bottom, #ff3019 0%,#cf0404 100%);
+}
+
+/* Centering the button */
+.btn-red {
+    left: 50%;
+    transform: translateX(-50%); 
+}
+
+/* Styling for a container with a skew effect */
+.skew-container {
+    transform: skewX(-10deg);
+    overflow: hidden;
+    width: 100%; 
+    height: 350px;
+}
+
+/* Styling for images inside the skew container */
+.skew-container img {
+    transform: skewX(10deg);
+    width: 100%;
+    min-width: 140%;
+    height: auto;
+    position: absolute;
+    left: -10%;
+    filter: grayscale(100%);
+    transition: filter 0.3s; 
+    transform: scale(1.1);
+}
+
+/* Hover effects for images inside the skew container */
+.skew-container:hover img {
+    filter: grayscale(0%);
+    transform:translateY(20px);
+    box-shadow: 10px 3px 20px 5px #ff0000;
+}
+
+/* Styling for text within the skew container */
+.gupit-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+    font-weight:bolder;
+    text-shadow: 4px 2px 5px #000000;
+    opacity: 0;
+    pointer-events: none; 
+    transition: opacity 0.3s ease-in; 
+    z-index: 1; 
+}
+
+/* Hover effect to show the text within the skew container */
+.skew-container:hover .gupit-text {
+    opacity: 1;
+}
+
+/* Styling for h2 elements */
+h2 {
+    margin-top: 10px; 
+    margin-bottom: 50px; 
+    text-align: center; 
+}
+
+.hr {
+color: #f7971d;
+opacity: 100%;
+}
+
+/* Transition effect for images inside the image container */
+.image-container img {
+    transition: box-shadow 0.3s ease;
+}
+
+/* Styling for the image container */
+.image-container {
+    position: relative;
+}
+
+/* Styling for star icons */
+.star-icons {
+    color: #f7971d; 
+    display: flex;
+    justify-content: center; 
+    margin-top: 10px; 
+}
+
+/* Spacing for individual star icons */
+.star-icons i {
+    margin: 0 2px; 
+}
+
+
+/* Styling for the footer */
+.custom-footer {
+    background: repeating-linear-gradient(
+        120deg,
+        black,
+        black 10px,
+        #444 10px,
+        #444 11px
+    );
+    color: #ffffff;
+}
+
+/* Media query to hide specific h1 elements in hero text for screen widths below 768px */
+@media (max-width: 768px) {
+    .hero-text h1.display-1, 
+    .hero-text h1.display-2 {
+        display: none;
+    }
+}
+
+/* Create account form */
+
+.contForms {
+    background-color: #ffffff;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+}
+.loginForms {
+    display: grid;
+
+    position: relative;
+    align-content: center;
+    margin-left: 10px;
+}
+
+
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 8px;
+}
+
+.inputUsername, .inputPass {
+    display: flex;
+    align-items:center;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 8px;
+    letter-spacing: 0.5px;
+}
+
+.icon {
+    width: 24px; /* Set the width of the icon as needed */
+    height: 24px; /* Set the height of the icon as needed */
+    margin-right: 10px;
+}
+
+
+
+input {
+    flex: 1px;
+    border: none;
+    outline: none;
+
+}
+
+.loginbtn {
+
+    background-color: #f7971d;
+    color: #ffffff;
+    border: none;
+    margin-top: 10px;
+    border-radius: 50px;
+    padding: 10px 10px;
+    width: 300px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+.loginbtn:hover {
+    background-color: #ff0000;
+}
+
+.loginh2 {
+    display: grid;
+    position: relative;
+    align-content: center;
+    color: rgb(29, 29, 29);
+    margin-top: 10px;
+    padding-bottom: 30px;
+    left: 10px
+}
+
+.forgetpass {
+     display: flex;
+     text-decoration: none;
+     color: inherit;
+}
+
+
+.login-container {
+    position: relative;
+    z-index: 2; /* Place it above the overlay */
+    /* Add other styles for your login container */
+}
+
+/* Style for the transparent overlay */
+.overlayeffect {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+    backdrop-filter: blur(8px); /* Apply a blur effect */
+    z-index: 1; /* Place it below the login container */
+}

@@ -1,0 +1,52 @@
+{
+  "items": [
+    {
+      "sys": { "id": "1" },
+      "fields": {
+        "title": "Anti-Chafing Crop Preserver",
+        "price": 350.00,
+        "image": { "fields": { "file": { "url": "./Images/Products/product1.png" } } }
+      }
+    },
+    {
+      "sys": { "id": "2" },
+      "fields": {
+        "title": "Beard Shampoo",
+        "price": 350.00,
+        "image": { "fields": { "file": { "url": "./Images/Products/product2.png" } } }
+      }
+    },
+    {
+      "sys": { "id": "3" },
+      "fields": {
+        "title": "Beard Conditioner",
+        "price": 300.00,
+        "image": { "fields": { "file": { "url": "./Images/Products/product3.png" } } }
+      }
+    },
+    {
+      "sys": { "id": "4" },
+      "fields": {
+        "title": "Beard Oil - Moisturizing Serum",
+        "price": 400.00,
+        "image": { "fields": { "file": { "url": "./Images/Products/product4.png" } } }
+      }
+    },
+    {
+      "sys": { "id": "5" },
+      "fields": {
+        "title": "Beard Balm - Styling Pomade",
+        "price": 450.00,
+        "image": { "fields": { "file": { "url": "./Images/Products/product6.png" } } }
+      }
+    },
+    {
+      "sys": { "id": "6" },
+      "fields": {
+        "title": "The Beard Hedger v1",
+        "price": 999.00,
+        "image": { "fields": { "file": { "url": "./Images/Products/product5-the lawn mower.png" } } }
+      }
+    }
+  ]
+}

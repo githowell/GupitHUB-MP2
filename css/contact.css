@@ -1,0 +1,245 @@
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    .wt-easein{
+        -webkit-transition: all 500ms ease-in;
+        -moz-transition: all 500ms ease-in;
+        -ms-transition: all 500ms ease-in;
+        -o-transition: all 500ms ease-in;
+        transition: all 500ms ease-in;
+    }
+}
+
+/* Set maximum height for the brand image in the navbar */
+.navbar-brand img {
+    max-height: 50px;
+}
+
+/* Styles for the navigation button */
+.navbar-btn {
+    background-color: red;
+    border: none;
+    margin-right: 10px; 
+}
+
+/* Default styles for the theme toggle button */
+.theme-toggle {
+    background-color: #f8f9fa;
+    border: none;
+    cursor: pointer;
+    padding: 1px 3px; 
+}
+
+/* Styles for elements in dark mode */
+.dark-mode {
+    background-color: #000000; 
+    color: #ffffff; 
+}
+.dark-mode .navbar {
+    background-color: #000000; 
+}
+.dark-mode .nav-link {
+    color: #ffffff; 
+    font-weight: bold;
+}
+.dark-mode .theme-toggle {
+    background-color: #f8f9fa; 
+    color: #000000; 
+}
+
+/* Styles for elements in light mode */
+.light-mode {
+    background-color: #f8f9fa;
+    color: #000000;
+}
+.light-mode .navbar {
+    background-color: #f8f9fa;
+}
+.light-mode .nav-link {
+    color: #000000; 
+    font-weight: bold;
+}
+.light-mode .theme-toggle {
+    background-color: #000000; 
+    color: #ffffff; 
+}
+
+
+.custom-heading {
+    color: #f7971d;
+    font-weight: bold;
+}
+
+/* Styling for the footer */
+.custom-footer {
+    background: repeating-linear-gradient(
+        120deg,
+        black,
+        black 10px,
+        #444 10px,
+        #444 11px
+    );
+    color: #ffffff;
+}
+
+/* Accordion button color when not active (collapsed) */
+.accordion-button {
+    display: flex;
+    align-items: center; /* Vertical Centering */
+    justify-content: center; /* Horizontal Centering */
+    background-color: #f7971d;
+    color: #000; /* or any color you want */
+    font-weight: bolder;
+    font-size: large;
+    padding: 1rem 2rem;
+    font-size: 25px;
+    }
+
+/* Accordion button color when active (expanded) */
+.accordion-button:not(.collapsed) {
+    background-color: #f7971d; /* Using Bootstrap's secondary color variable */
+    color: #ffffff; /* Assuming white text on gray background, adjust if needed */
+    
+}
+
+.accordion-collapse {
+    background-color: #f5f5f5; /* Light gray for content. Adjust as desired. */
+    text-align: center;
+}
+
+
+.accordion-body {
+    color: #000; /* or any color you want */
+    text-align: center;
+    font-size: large;
+}
+
+.accordion-header {
+    text-align: center;
+    justify-content: center; /* for the flex container */
+    
+    
+}
+
+
+.accordion-button::after {
+    margin-left: 10px;
+    
+}
+
+
+/* Styling for the Sticky */
+.messenger-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 9999;
+    padding: 0;
+    outline: none;
+}
+
+#messenger-popover-content {
+  
+    width: 300px;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    padding: 10px;
+    background-color: #fff;
+    color: #000000;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 9998;
+    text-align: left;
+    align-items: left;
+    font-size: large;
+}
+
+#messenger-popover-content img {
+  width: 150px;
+
+}
+
+#messenger-popover-content p {
+    font-size: 25px;
+}
+
+#messenger-popover-content h4 {
+    font-size: 20px;
+}
+
+.start-chat {
+    width: 275px;
+    display: block;
+    border-radius: 10px;
+    border-color: #00000000;
+    
+    
+}
+
+.start-chat-link {
+    text-decoration: none;  
+}
+
+.messenger-column {
+    display: flex;
+    flex-direction: row;
+    align-items: center;  
+}
+
+.messenger-icon {
+    font-size: 20px; 
+    margin-bottom: 10px;  
+}
+
+.messenger-text {
+    font-size: 15px; 
+}
+
+
+.close-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute; /* Absolute positioning */
+    top: 5px; /* Distance from the top */
+    right: 5px; /* Distance from the right */
+    z-index: 10; /* Ensure it stays above the other content in the popover */
+}
+
+
+.sendBtn {
+    background-color: #f7971d; 
+    color: #fff; 
+    border: none; 
+    padding: 10px 20px; 
+    cursor: pointer;
+  }
+  
+ 
+  .sendBtn:hover {
+    background-color: #ff0000; 
+    color: #fff;
+  }
+  .cart-btn {
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    color: #f7971d;
+  }
+  .cart-items {
+    position: absolute;
+    top: -9px;
+    right: -9px;
+    background: #ff0303;
+    padding: 0 4px;
+    border-radius: 34%;
+    color: #ffffff;
+    font-size: 15px
+  }
+

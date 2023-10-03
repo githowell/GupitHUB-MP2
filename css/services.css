@@ -1,0 +1,292 @@
+body {
+    font-family: 'Titillium Web', sans-serif;
+    background-image: url('/images/Services/Images/bg.jpg');
+    background-size: cover;  
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    background-attachment: fixed;
+    .wt-easein{
+        -webkit-transition: all 500ms ease-in;
+        -moz-transition: all 500ms ease-in;
+        -ms-transition: all 500ms ease-in;
+        -o-transition: all 500ms ease-in;
+        transition: all 500ms ease-in;
+        ;
+
+       
+    }
+}
+
+/* Set maximum height for the brand image in the navbar */
+.navbar-brand img {
+    max-height: 50px;
+}
+
+/* Styles for the navigation button */
+.navbar-btn {
+    background-color: red;
+    border: none;
+    margin-right: 10px; 
+}
+
+/* Default styles for the theme toggle button */
+.theme-toggle {
+    background-color: #f8f9fa;
+    border: none;
+    cursor: pointer;
+    padding: 1px 3px; 
+}
+
+/* Styles for elements in dark mode */
+.dark-mode {
+    background-color: #000000; 
+    color: #ffffff; 
+}
+.dark-mode .navbar {
+    background-color: #000000; 
+}
+.dark-mode .nav-link {
+    color: #ffffff; 
+    font-weight: bold;
+}
+.dark-mode .theme-toggle {
+    background-color: #f8f9fa; 
+    color: #000000; 
+}
+
+/* Styles for elements in light mode */
+.light-mode {
+    background-color: #f8f9fa;
+    color: #000000;
+}
+.light-mode .navbar {
+    background-color: #f8f9fa;
+}
+.light-mode .nav-link {
+    color: #000000; 
+    font-weight: bold;
+}
+.light-mode .theme-toggle {
+    background-color: #000000; 
+    color: #ffffff; 
+}
+
+.bg-dark {
+    background-color: #21252900!important;
+}
+
+
+/* Styling for the footer */
+.custom-footer {
+    background: repeating-linear-gradient(
+        120deg,
+        black,
+        black 10px,
+        #444 10px,
+        #444 11px
+    );
+    color: #ffffff;
+}
+
+/* Media query to hide specific h1 elements in hero text for screen widths below 768px */
+@media (max-width: 768px) {
+    .hero-text h1.display-1, 
+    .hero-text h1.display-2 {
+        display: none;
+    }
+}
+
+
+
+p {
+    text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.407);
+    font-weight:bolder;
+}
+
+.service-box {
+    border: 3px solid white;
+    padding: 20px;
+    margin: 10px 0;
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+}
+
+.service-box:hover {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;  /* smooth transition */
+}
+
+
+/* Default state of service-box */
+.service-box {
+    /* existing styles... */
+    position: relative;  /* To position the pseudo-element relative to the box */
+}
+
+/* Hide the pseudo-element by default */
+.service-box::before {
+    content: "";  /* default empty content */
+    position: absolute;  /* to position the price inside the box */
+    right: 70px;  /* spacing from the right */
+    top: 50%;  /* to vertically center the price */
+    transform: translateY(-50%);  /* to vertically center the price */
+    display: none;  /* hide by default */
+    color: #f7971d;
+}
+
+/* Display individual prices on hover */
+.service-box:hover::before {
+    display: block;  /* show the price on hover */
+}
+
+
+/* Set individual prices for each service */
+/* Set individual prices for each service */
+.col-md-4:nth-child(1) .service-box::before { content: "₱499"; }  /* HAIRCUT */
+.col-md-4:nth-child(2) .service-box::before { content: "₱299"; }  /* HEAD SHAVE */
+.col-md-4:nth-child(3) .service-box::before { content: "₱399"; }  /* FACE SHAVE */
+.col-md-4:nth-child(4) .service-box::before { content: "₱399"; }  /* BEARD TRIM */
+.col-md-4:nth-child(5) .service-box::before { content: "₱799"; }  /* COLORING */
+.col-md-4:nth-child(6) .service-box::before { content: "₱999"; }  /* BRAIDING */
+
+
+.appointment-button {
+    background-color: #f7971d;
+    border: none;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: x-large;
+    font-weight: bold;
+    color: white;
+    width: 100%; /* This will make the button take the full width of its container */
+    margin: 10px auto; /* Centers the button and provides spacing */
+    cursor: pointer; /* Changes the cursor to a hand when hovering over the button */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.appointment-button:hover {
+    background-color: #d68616; /* A slightly darker shade for hover effect */
+}
+
+/* Add some space around the container for breathing room */
+.container {
+    padding: 50px 0;
+    
+}
+
+/* Optional hover effect for images */
+.img-fluid {
+    transition: transform .2s; /* Animation */
+    border-radius: 10px;
+}
+
+.img-fluid:hover {
+    transform: scale(1.05); /* Zoom in slightly */
+}
+
+
+/* Styling for the Sticky */
+.messenger-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 9999;
+    padding: 0;
+    outline: none;
+}
+
+#messenger-popover-content {
+  
+    width: 300px;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    padding: 10px;
+    background-color: #fff;
+    color: #000000;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 9998;
+    text-align: left;
+    align-items: left;
+    font-size: large;
+}
+
+#messenger-popover-content img {
+  width: 150px;
+
+}
+
+#messenger-popover-content p {
+    font-size: 25px;
+}
+
+#messenger-popover-content h4 {
+    font-size: 20px;
+}
+
+.start-chat {
+    width: 275px;
+    display: block;
+    border-radius: 10px;
+    border-color: #00000000;
+    
+    
+}
+
+.start-chat-link {
+    text-decoration: none;  
+}
+
+.messenger-column {
+    display: flex;
+    flex-direction: row;
+    align-items: center;  
+}
+
+.messenger-icon {
+    font-size: 20px; 
+    margin-bottom: 10px;  
+}
+
+.messenger-text {
+    font-size: 15px; 
+}
+
+
+.close-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute; /* Absolute positioning */
+    top: 5px; /* Distance from the top */
+    right: 5px; /* Distance from the right */
+    z-index: 10; /* Ensure it stays above the other content in the popover */
+}
+
+.cart-btn {
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    color: #f7971d;
+  }
+  .cart-items {
+    position: absolute;
+    top: -9px;
+    right: -9px;
+    background: #ff0303;
+    padding: 0 4px;
+    border-radius: 34%;
+    color: #ffffff;
+    font-size: 15px
+  }
+

@@ -1,0 +1,418 @@
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    .wt-easein{
+        -webkit-transition: all 500ms ease-in;
+        -moz-transition: all 500ms ease-in;
+        -ms-transition: all 500ms ease-in;
+        -o-transition: all 500ms ease-in;
+        transition: all 500ms ease-in;
+    }
+    
+}
+
+
+
+
+.navbar-brand img {
+    max-height: 50px;
+}
+
+/* Styles for the navigation button */
+.navbar-btn {
+    background-color: red;
+    border: none;
+    margin-right: 10px; 
+}
+
+/* Default styles for the theme toggle button */
+.theme-toggle {
+    background-color: #f8f9fa;
+    border: none;
+    cursor: pointer;
+    padding: 1px 3px; 
+}
+
+/* Styles for elements in dark mode */
+.dark-mode {
+    background-color: #000000; 
+    color: #ffffff; 
+}
+.dark-mode .navbar {
+    background-color: #000000; 
+}
+.dark-mode .nav-link {
+    color: #ffffff; 
+    font-weight: bold;
+}
+.dark-mode .theme-toggle {
+    background-color: #f8f9fa; 
+    color: #000000; 
+}
+
+/* Styles for elements in light mode */
+.light-mode {
+    background-color: #f8f9fa;
+    color: #000000;
+}
+.light-mode .navbar {
+    background-color: #f8f9fa;
+}
+.light-mode .nav-link {
+    color: #000000; 
+    font-weight: bold;
+}
+.light-mode .theme-toggle {
+    background-color: #000000; 
+    color: #ffffff; 
+}
+
+
+
+/* INDEX PAGE START */
+
+/* Styles for the hero photo container */
+.HeroPhoto {
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;  
+}
+
+/* Positioning of the hero photo */
+.HeroPhoto {
+    position: relative;  
+}
+
+/* Transition effect for the hero image */
+.HeroPhoto img {
+    transition: opacity 1s; 
+}
+
+/* Styles for the text inside the hero photo */
+.hero-text {
+    position: absolute;
+    right: 8%; 
+    top: 30%; 
+    color: #fff;
+    z-index: 2; 
+}
+
+/* Styles for h1 inside the hero text */
+.hero-text h1 {
+    position: relative;
+    font-size: 66px;
+    margin-bottom: 10px;
+    font-style: oblique;
+    font-weight: bold;
+    margin-left: 0px;
+}
+
+/* Styles for a red gradient button */
+.btn-red {
+    position: relative;
+    background: linear-gradient(to bottom, #ff3019 0%,#cf0404 100%);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    margin-top: 20px;  
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: larger;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    left: 40%; 
+}
+
+/* style for the button */
+.btn-red {
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+    background-color: red;  
+    color: #fff;
+    border: none;
+    animation: blinkingGlow 1s infinite;
+}
+
+/* Blinking glow animation */
+@keyframes blinkingGlow {
+    0%, 100% {
+        opacity: 1;
+        box-shadow: none;
+    }
+    50% {
+        opacity: 0.6;
+        box-shadow: 0 0 5px #ff0000, 0 0 25px #ff0000, 0 0 50px #ff4d4d, 0 0 100px #ff4d4d;
+    }
+}
+
+/* Apply the animation on hover */
+.btn-red:hover {
+    animation: none;
+}
+
+
+
+
+
+/* Hover effect for the  button */
+.btn-red:hover {
+    background: linear-gradient(to bottom, #ff3019 0%,#cf0404 100%);
+}
+
+/* Centering the button */
+.btn-red {
+    left: 50%;
+    transform: translateX(-50%); 
+}
+
+
+.hr {
+color: #f7971d;
+opacity: 100%;
+}
+
+
+
+/* Styling for a container with a skew effect */
+.skew-container {
+    transform: skewX(-10deg);
+    overflow: hidden;
+    width: 100%; 
+    height: 350px;
+}
+
+/* Styling for images inside the skew container */
+.skew-container img {
+    transform: skewX(10deg);
+    width: 100%;
+    min-width: 140%;
+    height: auto;
+    position: absolute;
+    left: -10%;
+    filter: grayscale(100%);
+    transition: filter 0.3s; 
+    transform: scale(1.1);
+}
+
+/* Hover effects for images inside the skew container */
+.skew-container:hover img {
+    filter: grayscale(0%);
+    transform:translateY(20px);
+    box-shadow: 10px 3px 20px 5px #ff0000;
+}
+
+/* Styling for text within the skew container */
+.gupit-text {
+    position: absolute;
+    bottom: 0;
+    top: auto;
+    left: 50%;
+    transform: translate(-50%,50%);
+    color: white;
+    font-size: 3rem;
+    font-weight:bolder;
+    text-shadow: 4px 2px 5px #000000;
+    opacity: 0;
+    pointer-events: none; 
+    z-index: 1; 
+-webkit-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    -ms-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    transition: all 200ms ease-in;
+}
+
+/* Hover effect to show the text within the skew container */
+.skew-container:hover .gupit-text {
+    opacity: 1;
+    top: 50%;
+    bottom: auto;
+    transform: translateX(-50%);
+    
+    
+}
+
+
+/* Hover effect to show the text within the skew container */
+.skew-container:hover .gupit-text {
+    opacity: 1;
+}
+
+/* Styling for h2 elements */
+h2 {
+    margin-top: 50px; 
+    margin-bottom: 50px; 
+    text-align: center; 
+}
+
+/* Transition effect for images inside the image container */
+.image-container img {
+    transition: box-shadow 0.3s ease;
+}
+
+/* Styling for the image container */
+.image-container {
+    position: relative;
+}
+
+/* Styling for star icons */
+.star-icons {
+    color: #f7971d; 
+    display: flex;
+    justify-content: center; 
+    margin-top: 10px; 
+}
+
+/* Spacing for individual star icons */
+.star-icons i {
+    margin: 0 2px; 
+}
+
+/* Styling for the footer */
+.custom-footer {
+    background: repeating-linear-gradient(
+        120deg,
+        black,
+        black 10px,
+        #444 10px,
+        #444 11px
+    );
+    color: #ffffff;
+}
+
+
+/* Styling for the Sticky */
+.messenger-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 9999;
+    padding: 0;
+    outline: none;
+}
+
+#messenger-popover-content {
+  
+    width: 300px;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    padding: 10px;
+    background-color: #fff;
+    color: #000000;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 9998;
+    text-align: left;
+    align-items: left;
+    font-size: large;
+}
+
+#messenger-popover-content img {
+  width: 150px;
+
+}
+
+#messenger-popover-content p {
+    font-size: 25px;
+}
+
+#messenger-popover-content h4 {
+    font-size: 20px;
+}
+
+.start-chat {
+    width: 275px;
+    display: block;
+    border-radius: 10px;
+    border-color: #00000000;
+    
+    
+}
+
+.start-chat-link {
+    text-decoration: none;  
+}
+
+.messenger-column {
+    display: flex;
+    flex-direction: row;
+    align-items: center;  
+}
+
+.messenger-icon {
+    font-size: 20px; 
+    margin-bottom: 10px;  
+}
+
+.messenger-text {
+    font-size: 15px; 
+}
+
+
+.close-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute; /* Absolute positioning */
+    top: 5px; /* Distance from the top */
+    right: 5px; /* Distance from the right */
+    z-index: 10; /* Ensure it stays above the other content in the popover */
+}
+
+/* SOUND TOGGLER */
+.sound-toggle-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 40px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+
+
+
+/* Media query to hide specific h1 elements in hero text for screen widths below 768px */
+@media (max-width: 768px) {
+    .hero-text h1.display-1, 
+    .hero-text h1.display-2 {
+        display: none;
+    }
+}
+
+ 
+.cart-btn {
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    color: #f7971d;
+  }
+  .cart-items {
+    position: absolute;
+    top: -9px;
+    right: -9px;
+    background: #ff0303;
+    padding: 0 4px;
+    border-radius: 34%;
+    color: #ffffff;
+    font-size: 15px
+  }
+
+
+
+
+
+

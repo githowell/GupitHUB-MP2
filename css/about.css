@@ -1,0 +1,317 @@
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+
+
+/* Set maximum height for the brand image in the navbar */
+.navbar-brand img {
+    max-height: 50px;
+}
+
+/* Styles for the navigation button */
+.navbar-btn {
+    background-color: red;
+    border: none;
+    margin-right: 10px; 
+}
+
+/* Default styles for the theme toggle button */
+.theme-toggle {
+    background-color: #f8f9fa;
+    border: none;
+    cursor: pointer;
+    padding: 1px 3px; 
+}
+
+/* Dark mode theme styling */
+.dark-mode {
+    background-color: #000000; 
+    color: #ffffff; 
+}
+
+.dark-mode .navbar {
+    background-color: #000000; 
+}
+
+.dark-mode .nav-link {
+    color: #ffffff; 
+    font-weight: bold;
+}
+
+.dark-mode .theme-toggle {
+    background-color: #f8f9fa; 
+    color: #000000; 
+}
+
+/* Light mode theme styling */
+.light-mode {
+    background-color: #f8f9fa;
+    color: #000000;
+}
+
+.light-mode .navbar {
+    background-color: #f8f9fa;
+}
+
+.light-mode .nav-link {
+    color: #000000; 
+    font-weight: bold;
+}
+
+.light-mode .theme-toggle {
+    background-color: #000000; 
+    color: #ffffff; 
+}
+
+/* Hero section */
+.hero-section {
+    position: relative;
+    overflow: hidden;  /* This makes sure the overlay-text doesn't spill outside */
+}
+
+.overlay-text {
+    position: absolute;
+    font-size: 25px;
+    top: 0;            /* Start at the top */
+    left: 0;           /* Start at the left */
+    z-index: 10;       /* Place it above the video */
+    background-color: rgba(0, 0, 0, 0.5);  /* Semi-transparent background to make text readable */
+}
+
+
+/* uniform height for images */
+.equal-height {
+    height: 250px; 
+    object-fit: cover;
+}
+
+
+.image-container {
+    position: relative;
+}
+
+/* call to action on barber services */
+.barber-button {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Custom footer with striped design */
+.custom-footer {
+    background: repeating-linear-gradient(
+        120deg,
+        black,
+        black 10px,
+        #444 10px,
+        #444 11px
+    );
+    color: #ffffff;
+}
+
+/* modal used for barber service information */
+#barberModal .modal-header {
+    background-color: #f7971d;
+    color: white; 
+}
+
+#barberModal .modal-title {
+    font-size: 24px; 
+    font-weight: bold; 
+}
+
+#barberModal .modal-body {
+    font-size: 20px; 
+    color: #333;    
+    line-height: 1.1; 
+}
+
+#barberModal .modal-body p {
+    margin-bottom: 20px;
+}
+
+#barberModal .modal-body ul {
+    padding-left: 30px;
+}
+
+#barberModal .modal-body ul li {
+    margin-bottom: 10px;
+}
+
+#barberModal .modal-footer {
+    background-color: #574949; 
+    font-size: 14px; 
+}
+
+#barberModal .btn-danger {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#barberModal .fas.fa-star {
+    color: gold;
+}
+
+/* General modal styling,*/
+.modal-header {
+    background-color: #f7971d;
+}
+
+.modal-title {
+    font-weight: bold;
+}
+
+.modal-body {
+    font-size: 20px; 
+    color: #333;    
+    line-height: 1.1; 
+}
+
+/* Styling for progress bars typically used to display expertise level or progress */
+.progress-bar {
+    background-color: #3498db;
+}
+
+.modal-footer {
+    font-size: large;
+    font-style: italic;
+    background-color: #574949;
+}
+
+.modal-footer .btn-danger {
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+    margin-left: auto;
+}
+
+/* card styling */
+.card {
+    display: flex;
+    color: #000000;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.316);
+}
+
+.card img {
+    background-size: cover;
+}
+
+/* Base styling for paragraph elements */
+p {
+    font-size: larger;
+}
+
+/* Styling for the Sticky */
+.messenger-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 9999;
+    padding: 0;
+    outline: none;
+}
+
+#messenger-popover-content {
+  
+    width: 300px;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    padding: 10px;
+    background-color: #fff;
+    color: #000000;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 9998;
+    text-align: left;
+    align-items: left;
+    font-size: large;
+}
+
+#messenger-popover-content img {
+  width: 150px;
+
+}
+
+#messenger-popover-content p {
+    font-size: 25px;
+}
+
+#messenger-popover-content h4 {
+    font-size: 20px;
+}
+
+.start-chat {
+    width: 275px;
+    display: block;
+    border-radius: 10px;
+    border-color: #00000000;
+    
+    
+}
+
+.start-chat-link {
+    text-decoration: none;  
+}
+
+.messenger-column {
+    display: flex;
+    flex-direction: row;
+    align-items: center;  
+}
+
+.messenger-icon {
+    font-size: 20px; 
+    margin-bottom: 10px;  
+}
+
+.messenger-text {
+    font-size: 15px; 
+}
+
+
+.close-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute; /* Absolute positioning */
+    top: 5px; /* Distance from the top */
+    right: 5px; /* Distance from the right */
+    z-index: 10; /* Ensure it stays above the other content in the popover */
+}
+.cart-btn {
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    color: #f7971d;
+  }
+  .cart-items {
+    position: absolute;
+    top: -9px;
+    right: -9px;
+    background: #ff0303;
+    padding: 0 4px;
+    border-radius: 34%;
+    color: #ffffff;
+    font-size: 15px
+  }
+
