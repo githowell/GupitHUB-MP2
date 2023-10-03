@@ -434,3 +434,13 @@ input {
     backdrop-filter: blur(8px); /* Apply a blur effect */
     z-index: 1; /* Place it below the login container */
 }
+
+#reCAPTCHAdummy {
+    width: 290px;
+    height: 60px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.945);
+    display: flex;
+    position: relative;
+    margin-top: 47px;
+    margin-left: 24px;
+}
